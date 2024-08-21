@@ -59,9 +59,8 @@ export default function Home() {
 
       {/* Our Services Section */}
       <section className="bg-white py-6">
-        <h2 className="text-center text-xl md:text-2xl font-semibold mb-6 text-gray-800">
-          OUR SERVICES
-        </h2>
+        <h2 className="text-center text-xl md:text-2xl font-semibold mb-6 text-gray-800"> OUR SERVICES </h2>
+
         <div className="container mx-auto px-4 md:px-10 lg:px-20 py-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden">
@@ -130,9 +129,9 @@ export default function Home() {
                     </p>
                   </div>
                 </li>
+
                 <li className="flex items-start space-x-2">
-                  <svg
-                    className="w-6 h-6 flex-shrink-0 text-gray-500"
+                  <svg className="w-6 h-6 flex-shrink-0 text-gray-500"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -214,13 +213,13 @@ export default function Home() {
           </div>
           <div className="space-y-4 text-gray-700">
             <p>
-              "Socius Synergia Limited made the loan process hassle-free. I was
-              able to get the funds I needed for my business with ease." - Emeka
+              Socius Synergia Limited made the loan process hassle free. I was
+              able to get the funds I needed for my business with ease. Emeka
               Okwudike
             </p>
             <p>
-              "Socius Synergia Limited helped me consolidate my numerous debts
-              which I've been struggling with. I am super grateful for them!" -
+              Socius Synergia Limited helped me consolidate my numerous debts
+              which I have been struggling with. I am super grateful for them.
               Benita Dongo
             </p>
           </div>
@@ -255,8 +254,8 @@ export default function Home() {
           </h3>
           <p className="text-lg md:text-xl mb-6 text-gray-700">
             Have questions or need assistance? Our friendly team is here to
-            help. Reach out to us via phone or email, and we'll get back to you
-            promptly.
+            help. Reach out to us via phone or email, and we will get back to
+            you promptly.
           </p>
           <div className="text-lg md:text-xl text-gray-600">
             <p className="mb-2">
@@ -283,4 +282,3 @@ export default function Home() {
     </main>
   );
 }
-

@@ -6,6 +6,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import Link from "next/link";
+import {logo} from "../../public/images/logo.JPG"
 
 const Footer = () => {
   return (
@@ -13,19 +14,14 @@ const Footer = () => {
       <div className="container mx-auto max-w-7xl">
         {/* Footer Top */}
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start mb-8">
-          {/* Logo and Info */}
+         
           <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
             <Link
               href="/"
               className="flex items-center text-2xl font-bold mb-2"
             >
               <span className="sr-only">Socius Synergia Limited</span>
-              {/* Assuming logo image is displayed here */}
-              <img
-                src="/images/logo.JPG"
-                alt="Socius Synergia Limited"
-                className="h-10 w-10 rounded-full"
-              />
+            
               <span className="text-white text-2xl font-extrabold ml-4 hidden md:inline">
                 SOCIUS SYNERGIA LIMITED
               </span>

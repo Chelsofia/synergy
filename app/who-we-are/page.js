@@ -61,7 +61,7 @@ export default function WhoWeArePage() {
             <p className="text-lg leading-relaxed">
               We are dedicated to driving innovation and continuously improving
               our services to provide cutting-edge solutions that meet our
-              clients' needs.
+              client&#39;s needs.
             </p>
           </div>
           <div className="p-6 bg-gray-100 rounded-lg shadow-md">
@@ -129,7 +129,7 @@ export default function WhoWeArePage() {
               <p className="text-lg leading-relaxed">Chief Financial Officer</p>
               <p className="text-lg leading-relaxed mt-2">
                 With a background in financial management and strategic
-                planning, Jane ensures the company's financial health and
+                planning, Jane ensures the company&#39;s financial health and
                 long-term growth.
               </p>
             </div>
