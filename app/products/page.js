@@ -14,7 +14,7 @@ export default function ProductPage() {
     <main className="min-h-screen bg-gray-50">
       {/* Main Services Section */}
       <section className="mb-12 px-4 md:px-8">
-        <h1 className="text-3xl font-bold text-center pt-4 mb-6">SERVICES</h1>
+        <h1 className="text-3xl font-bold text-center pt-4 mb-6">PRODUCTS</h1>
         <div className="flex flex-col md:flex-row items-center justify-between md:space-x-8 mb-12">
           {/* Write-up */}
           <div className="flex-1 mb-6 md:mb-0">

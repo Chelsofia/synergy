@@ -43,7 +43,6 @@ export default function Home() {
               mutual benefit and success.
             </p>
           </div>
-
           <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden">
             <Image
               src="/images/Humaaans - Chill at Home.png"
@@ -60,7 +59,6 @@ export default function Home() {
       {/* Our Services Section */}
       <section className="bg-white py-6">
         <h2 className="text-center text-xl md:text-2xl font-semibold mb-6 text-gray-800"> OUR SERVICES </h2>
-
         <div className="container mx-auto px-4 md:px-10 lg:px-20 py-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
             <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden">
@@ -129,9 +127,9 @@ export default function Home() {
                     </p>
                   </div>
                 </li>
-
                 <li className="flex items-start space-x-2">
-                  <svg className="w-6 h-6 flex-shrink-0 text-gray-500"
+                  <svg
+                    className="w-6 h-6 flex-shrink-0 text-gray-500"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -189,15 +187,15 @@ export default function Home() {
           CUSTOMER TESTIMONIALS
         </h2>
         <div className="container mx-auto px-4 md:px-10 lg:px-20 py-6 flex flex-col md:flex-row gap-8 items-center">
-          <div className="relative w-full md:w-[50vw] md:h-[25vw] bg-gray-200 rounded-full overflow-hidden">
+          <div className="relative w-full md:w-80 lg:w-96 h-64 md:h-80 lg:h-96 bg-gray-200 rounded-full overflow-hidden">
             <div className="relative w-full h-full">
               {images.map((src, index) => (
                 <div
                   key={index}
-                  className={`absolute inset-0 clip-ellipse transition-transform duration-1000 ${
+                  className={`absolute inset-0 transition-transform duration-1000 ${
                     index === currentImage
-                      ? "translate-x-0"
-                      : "translate-x-full"
+                      ? "translate-x-0 opacity-100"
+                      : "translate-x-full opacity-0"
                   }`}
                 >
                   <Image
@@ -213,7 +211,7 @@ export default function Home() {
           </div>
           <div className="space-y-4 text-gray-700">
             <p>
-              Socius Synergia Limited made the loan process hassle free. I was
+              Socius Synergia Limited made the loan process hassle-free. I was
               able to get the funds I needed for my business with ease. Emeka
               Okwudike
             </p>
