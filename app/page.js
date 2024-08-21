@@ -1,10 +1,15 @@
 "use client";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import Modal from "./components/Modal";
 
 export default function Home() {
   // State to handle which image is visible
   const [currentImage, setCurrentImage] = useState(0);
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => setModalOpen(true);
+    const closeModal = () => setModalOpen(false);
 
   // Array of image sources
   const images = ["/images/suit.jpg", "/images/ogo.jpg"];
@@ -242,12 +247,13 @@ export default function Home() {
             quick and easy application form to see how Prosper Lend can help you
             achieve your goals.
           </p>
-          <a
+          <button onClick={openModal}
+        
             href="/apply"
             className="inline-block bg-gray-200 text-black py-3 px-6 rounded-lg font-semibold text-lg hover:bg-gray-300 transition-colors"
           >
             APPLY NOW
-          </a>
+          </button>
         </div>
       </section>
 
@@ -284,6 +290,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
     </main>
   );
 }
